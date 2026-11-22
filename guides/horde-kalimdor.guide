@@ -1,0 +1,125 @@
+# Every Horde flight path in Kalimdor, from the two capitals out to the level 60 zones, roughly in
+# the order of the zones' levels. Polestar knows which flight paths a character has, so each step a
+# character already has is passed over: the tour always picks up at the first flight path still
+# missing.
+#
+# The flight points and their flight masters come from Polestar's reference data. Mount Hyjal's two
+# are WoW Forever's own: Polestar's data has them since 0.4.0, and they still name their flight
+# master (npc). No `next`: an import string may only lead on to a guide the player already imported,
+# so each tour ends on its own and its last step points to the other continent's.
+
+guide flight-path-collector/horde-kalimdor
+title Flight Paths: Kalimdor (Horde)
+faction Horde
+category Exploration
+folder Flight paths
+levels 1-60
+zone map 1414
+keywords flight path, flight paths, flight point, flight points, flight master, wind rider, FP, taxi, Mount Hyjal
+why Every flight path you learn is a walk you never make again, and the tour skips the ones you already have.
+version 2
+
+step Orgrimmar
+  zone Orgrimmar
+  tip The Horde capital, in the north of Durotar.
+  getfp "Orgrimmar"
+
+step Crossroads
+  zone The Barrens
+  tip The Horde town in the middle of the Barrens (levels 10-25), west of Durotar across the river.
+  getfp "Crossroads"
+
+step Ratchet
+  zone The Barrens
+  tip The goblin port on the Barrens' east coast. Its flight master flies both factions, and the boat to Booty Bay leaves from its dock.
+  getfp "Ratchet"
+
+step Camp Taurajo
+  zone The Barrens
+  tip The tauren camp in the south of the Barrens.
+  getfp "Camp Taurajo"
+
+step Thunder Bluff
+  zone Thunder Bluff
+  tip The tauren capital on the mesas of northern Mulgore. The lifts at the foot of the bluff take you up.
+  getfp "Thunder Bluff"
+
+step Sun Rock Retreat
+  zone Stonetalon Mountains
+  tip The Horde town in the middle of the Stonetalon Mountains (levels 15-27).
+  getfp "Sun Rock Retreat"
+
+step Zoram'gar Outpost
+  zone Ashenvale
+  tip The Horde camp on the coast of western Ashenvale (levels 18-30).
+  getfp "Zoram'gar Outpost"
+
+step Splintertree Post
+  zone Ashenvale
+  tip The Horde post in eastern Ashenvale, north of the Barrens.
+  getfp "Splintertree Post"
+
+step Freewind Post
+  zone Thousand Needles
+  tip The tauren post on the mesas in the middle of Thousand Needles (levels 25-35). The Great Lift in the south of the Barrens takes you down into the canyon.
+  getfp "Freewind Post"
+
+step Camp Mojache
+  zone Feralas
+  tip The tauren camp in eastern Feralas, west of Thousand Needles. Feralas is a level 40-50 zone: below that, keep to the road.
+  getfp "Camp Mojache"
+
+step Shadowprey Village
+  zone Desolace
+  tip The Horde village on the south-west coast of Desolace (levels 30-40), north of Feralas.
+  getfp "Shadowprey Village"
+
+step Brackenwall Village
+  zone Dustwallow Marsh
+  tip The Horde village in the north-west of Dustwallow Marsh (levels 35-45), east of the Barrens.
+  getfp "Brackenwall Village"
+
+step Gadgetzan
+  zone Tanaris
+  tip The goblin town in the north of Tanaris (levels 40-50), south of Thousand Needles past the Shimmering Flats.
+  getfp "Gadgetzan"
+
+step Marshal's Refuge
+  zone Un'Goro Crater
+  tip The explorers' camp at the north end of Un'Goro Crater (levels 48-55), west of Tanaris. Its flight master flies both factions.
+  getfp "Marshal's Refuge"
+
+step Cenarion Hold
+  zone Silithus
+  tip The Cenarion Circle's town in the north of Silithus (levels 55-60).
+  getfp "Cenarion Hold"
+
+step Valormok
+  zone Azshara
+  tip The Horde camp in western Azshara (levels 45-55), east of Ashenvale.
+  getfp "Valormok"
+
+step Bloodvenom Post
+  zone Felwood
+  tip The Horde camp in the middle of Felwood (levels 48-55), north of Ashenvale.
+  getfp "Bloodvenom Post"
+
+step Moonglade
+  zone Moonglade
+  tip The druids' valley north of Felwood, reached through the furbolg tunnels of Timbermaw Hold. The furbolgs attack until your standing with Timbermaw Hold reaches Unfriendly (killing Deadwood furbolgs in Felwood raises it); at level 60 you can run straight through.
+  getfp "Moonglade"
+
+step Everlook
+  zone Winterspring
+  tip The goblin town in Winterspring (levels 55-60). Take the Winterspring exit of the Timbermaw Hold tunnels and follow the road east.
+  getfp "Everlook"
+
+step Tainted Foothills
+  zone Mount Hyjal
+  tip Mount Hyjal is WoW Forever's own zone (levels 54-60), entered from the south of Winterspring through Darkwhisper Gorge. The step ticks itself when Bluebell's flight map opens (with a Polestar older than 0.4, tick it off yourself).
+  getfp "Tainted Foothills" npc 260626
+
+step Summit of Eternity
+  zone Mount Hyjal
+  tip In the north-east of Mount Hyjal. Like the Tainted Foothills, it ticks itself when Fayran Elthas's flight map opens. It is the last Horde flight path in Kalimdor: for the other continent, open Flight Paths: Eastern Kingdoms (Horde).
+  getfp "Summit of Eternity" npc 41861

@@ -1,0 +1,105 @@
+# Every Alliance flight path in the Eastern Kingdoms, from Stormwind and Ironforge out to the level 60
+# zones, roughly in the order of the zones' levels. Polestar knows which flight paths a character has,
+# so each step a character already has is passed over: the tour always picks up at the first flight
+# path still missing.
+#
+# The flight points and their flight masters come from Polestar's reference data. Farholde Keep in the
+# Riverglades is WoW Forever's own: Polestar's data has it since 0.4.0, and it still names its flight
+# master (npc). No `next`: an import string may only lead on to a guide the player already imported,
+# so each tour ends on its own and its last step points to the other continent's.
+
+guide flight-path-collector/alliance-eastern-kingdoms
+title Flight Paths: Eastern Kingdoms (Alliance)
+faction Alliance
+category Exploration
+folder Flight paths
+levels 1-60
+zone map 1415
+keywords flight path, flight paths, flight point, flight points, flight master, gryphon, FP, taxi, Riverglades
+why Every flight path you learn is a walk you never make again, and the tour skips the ones you already have.
+version 2
+
+step Stormwind
+  zone Stormwind City
+  tip The human capital, in the north-west of Elwynn Forest.
+  getfp "Stormwind"
+
+step Sentinel Hill
+  zone Westfall
+  tip The People's Militia's stronghold in the middle of Westfall (levels 10-20), west of Elwynn Forest.
+  getfp "Sentinel Hill"
+
+step Darkshire
+  zone Duskwood
+  tip The town in the east of Duskwood (levels 18-30), south of Elwynn Forest.
+  getfp "Darkshire"
+
+step Lakeshire
+  zone Redridge Mountains
+  tip The town by the lake in the Redridge Mountains (levels 15-25), east of Elwynn Forest.
+  getfp "Lakeshire"
+
+step Ironforge
+  zone Ironforge
+  tip The dwarven capital in Dun Morogh. From Stormwind the Deeprun Tram takes you there under the mountains.
+  getfp "Ironforge"
+
+step Thelsamar
+  zone Loch Modan
+  tip The dwarven town in the west of Loch Modan (levels 10-20), east of Dun Morogh.
+  getfp "Thelsamar"
+
+step Menethil Harbor
+  zone Wetlands
+  tip The port on the west coast of the Wetlands (levels 20-30), north of Loch Modan through Dun Algaz. Its boats sail to Theramore, Southshore and Auberdine.
+  getfp "Menethil Harbor"
+
+step Southshore
+  zone Hillsbrad Foothills
+  tip The town on the coast of Hillsbrad Foothills (levels 20-30). The boat from Menethil Harbor lands here.
+  getfp "Southshore"
+
+step Refuge Pointe
+  zone Arathi Highlands
+  tip The League of Arathor's camp in the middle of the Arathi Highlands (levels 30-40), east of Hillsbrad.
+  getfp "Refuge Pointe"
+
+step Farholde Keep
+  zone Riverglades
+  tip The Alliance keep in the south of the Riverglades, WoW Forever's own zone east of Redridge (levels 36-44). The step ticks itself when Gretchen Mayberry's flight map opens (with a Polestar older than 0.4, tick it off yourself).
+  getfp "Farholde Keep" npc 257087
+
+step Booty Bay
+  zone Stranglethorn Vale
+  tip The goblin port at the southern tip of Stranglethorn Vale (levels 30-45), with a flight master for each faction. The road south from Duskwood crosses the whole jungle; the boat from Ratchet lands here too.
+  getfp "Booty Bay"
+
+step Aerie Peak
+  zone The Hinterlands
+  tip The Wildhammer dwarves' stronghold in the west of the Hinterlands (levels 40-50), where the road from Hillsbrad Foothills comes in.
+  getfp "Aerie Peak"
+
+step Thorium Point
+  zone Searing Gorge
+  tip The Thorium Brotherhood's camp on the north-west rim of the Searing Gorge (levels 43-50). The trail into the Gorge climbs up from the western Badlands close to Kargath, a Horde outpost: mind its guards.
+  getfp "Thorium Point"
+
+step Nethergarde Keep
+  zone Blasted Lands
+  tip The keep in the north of the Blasted Lands (levels 45-55), south of the Swamp of Sorrows.
+  getfp "Nethergarde Keep"
+
+step Morgan's Vigil
+  zone Burning Steppes
+  tip The Alliance camp in the east of the Burning Steppes (levels 50-58), just west of Redridge.
+  getfp "Morgan's Vigil"
+
+step Chillwind Camp
+  zone Western Plaguelands
+  tip The Alliance camp in the south of the Western Plaguelands (levels 51-58), north of Hillsbrad Foothills.
+  getfp "Chillwind Camp"
+
+step Light's Hope Chapel
+  zone Eastern Plaguelands
+  tip The Argent Dawn's chapel at the east end of the Eastern Plaguelands (levels 53-60). The road east from the Western Plaguelands crosses the zone. It is the last Alliance flight path in the Eastern Kingdoms: for the other continent, open Flight Paths: Kalimdor (Alliance).
+  getfp "Light's Hope Chapel"

@@ -1,0 +1,109 @@
+# Every Alliance flight path in Kalimdor, from Teldrassil out to the level 60 zones, roughly in the
+# order of the zones' levels. Polestar knows which flight paths a character has, so each step a
+# character already has is passed over: the tour always picks up at the first flight path still
+# missing.
+#
+# The flight points and their flight masters come from Polestar's reference data. Mount Hyjal's two
+# are WoW Forever's own: Polestar's data has them since 0.4.0, and they still name their flight
+# master (npc).
+
+guide flight-path-collector/alliance-kalimdor
+title Flight Paths: Kalimdor (Alliance)
+faction Alliance
+category Exploration
+folder Flight paths
+levels 1-60
+zone map 1414
+keywords flight path, flight paths, flight point, flight points, flight master, hippogryph, gryphon, FP, taxi, Mount Hyjal
+why Every flight path you learn is a walk you never make again, and the tour skips the ones you already have.
+version 2
+
+step Rut'theran Village
+  zone Teldrassil
+  tip The village at the foot of Teldrassil, below Darnassus. The boat to Auberdine leaves from its dock.
+  getfp "Rut'theran Village"
+
+step Auberdine
+  zone Darkshore
+  tip The night elves' port on the coast of Darkshore (levels 10-20). Its boats sail to Rut'theran Village, Stormwind, Menethil Harbor and Southshore.
+  getfp "Auberdine"
+
+step Astranaar
+  zone Ashenvale
+  tip The night elf town in the middle of Ashenvale (levels 18-30), south of Darkshore.
+  getfp "Astranaar"
+
+step Stonetalon Peak
+  zone Stonetalon Mountains
+  tip The Alliance post at the north end of the Stonetalon Mountains (levels 15-27), west of Ashenvale.
+  getfp "Stonetalon Peak"
+
+step Ratchet
+  zone The Barrens
+  tip The goblin port on the east coast of the Barrens (levels 10-25), a Horde zone: give the Crossroads a wide berth. Its flight master flies both factions, and the boat to Booty Bay leaves from its dock.
+  getfp "Ratchet"
+
+step Nijel's Point
+  zone Desolace
+  tip The Alliance camp in the north of Desolace (levels 30-40), south of the Stonetalon Mountains.
+  getfp "Nijel's Point"
+
+step Theramore
+  zone Dustwallow Marsh
+  tip Theramore Isle, on the east coast of Dustwallow Marsh (levels 35-45). The boat from Menethil Harbor lands here.
+  getfp "Theramore"
+
+step Thalanaar
+  zone Feralas
+  tip The night elf outpost on the eastern edge of Feralas (levels 40-50), on the road in from Thousand Needles.
+  getfp "Thalanaar"
+
+step Feathermoon
+  zone Feralas
+  tip Feathermoon Stronghold stands on an island off the west coast of Feralas. A boat crosses to it from the dock on the Forgotten Coast.
+  getfp "Feathermoon"
+
+step Gadgetzan
+  zone Tanaris
+  tip The goblin town in the north of Tanaris (levels 40-50), south of Thousand Needles past the Shimmering Flats.
+  getfp "Gadgetzan"
+
+step Marshal's Refuge
+  zone Un'Goro Crater
+  tip The explorers' camp at the north end of Un'Goro Crater (levels 48-55), west of Tanaris. Its flight master flies both factions.
+  getfp "Marshal's Refuge"
+
+step Cenarion Hold
+  zone Silithus
+  tip The Cenarion Circle's town in the north of Silithus (levels 55-60).
+  getfp "Cenarion Hold"
+
+step Talrendis Point
+  zone Azshara
+  tip The night elf camp in the south-west corner of Azshara (levels 45-55), near the border with Ashenvale.
+  getfp "Talrendis Point"
+
+step Talonbranch Glade
+  zone Felwood
+  tip The night elf camp in the north of Felwood (levels 48-55), not far from the tunnels of Timbermaw Hold.
+  getfp "Talonbranch Glade"
+
+step Moonglade
+  zone Moonglade
+  tip The druids' valley north of Felwood, reached through the furbolg tunnels of Timbermaw Hold. The furbolgs attack until your standing with Timbermaw Hold reaches Unfriendly (killing Deadwood furbolgs in Felwood raises it); at level 60 you can run straight through.
+  getfp "Moonglade"
+
+step Everlook
+  zone Winterspring
+  tip The goblin town in Winterspring (levels 55-60). Take the Winterspring exit of the Timbermaw Hold tunnels and follow the road east.
+  getfp "Everlook"
+
+step Tainted Foothills
+  zone Mount Hyjal
+  tip Mount Hyjal is WoW Forever's own zone (levels 54-60), entered from the south of Winterspring through Darkwhisper Gorge. The step ticks itself when Bluebell's flight map opens (with a Polestar older than 0.4, tick it off yourself).
+  getfp "Tainted Foothills" npc 260626
+
+step Summit of Eternity
+  zone Mount Hyjal
+  tip In the north-east of Mount Hyjal. Like the Tainted Foothills, it ticks itself when Fayran Elthas's flight map opens. It is the last Alliance flight path in Kalimdor: for the other continent, open Flight Paths: Eastern Kingdoms (Alliance).
+  getfp "Summit of Eternity" npc 41861

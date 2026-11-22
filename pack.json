@@ -1,0 +1,9 @@
+{
+	"id": "flight-path-collector",
+	"title": "Flight Path Collector",
+	"author": "creazy231",
+	"version": "1.0.1",
+	"license": "CC-BY-4.0",
+	"source": "Routed for WoW Forever from its flight point table and Polestar's travel data",
+	"folder": "PolestarPack_flight-path-collector"
+}

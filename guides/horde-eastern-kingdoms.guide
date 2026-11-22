@@ -1,0 +1,84 @@
+# Every Horde flight path in the Eastern Kingdoms, from Undercity out to the level 60 zones, roughly in
+# the order of the zones' levels. Polestar knows which flight paths a character has, so each step a
+# character already has is passed over: the tour always picks up at the first flight path still
+# missing.
+#
+# The flight points and their flight masters come from Polestar's reference data. Rog'mar in the
+# Riverglades is WoW Forever's own: Polestar's data has it since 0.4.0, and it still names its flight
+# master (npc).
+
+guide flight-path-collector/horde-eastern-kingdoms
+title Flight Paths: Eastern Kingdoms (Horde)
+faction Horde
+category Exploration
+folder Flight paths
+levels 1-60
+zone map 1415
+keywords flight path, flight paths, flight point, flight points, flight master, wind rider, bat, FP, taxi, Riverglades
+why Every flight path you learn is a walk you never make again, and the tour skips the ones you already have.
+version 2
+
+step Undercity
+  zone Undercity
+  tip The Forsaken capital under the ruins of Lordaeron, in Tirisfal Glades. The zeppelins to Orgrimmar and Grom'gol leave from the tower outside the ruins.
+  getfp "Undercity"
+
+step The Sepulcher
+  zone Silverpine Forest
+  tip The Forsaken outpost in the middle of Silverpine Forest (levels 10-20), south of Tirisfal Glades.
+  getfp "The Sepulcher"
+
+step Tarren Mill
+  zone Hillsbrad Foothills
+  tip The Forsaken town in the north-east of Hillsbrad Foothills (levels 20-30).
+  getfp "Tarren Mill"
+
+step Hammerfall
+  zone Arathi Highlands
+  tip The Horde town in the east of the Arathi Highlands (levels 30-40).
+  getfp "Hammerfall"
+
+step Grom'gol
+  zone Stranglethorn Vale
+  tip The Horde base camp in the north of Stranglethorn Vale (levels 30-45), where the zeppelins from Undercity and Orgrimmar land.
+  getfp "Grom'gol"
+
+step Booty Bay
+  zone Stranglethorn Vale
+  tip The goblin port at the southern tip of Stranglethorn Vale, with a flight master for each faction. The boat from Ratchet lands here too.
+  getfp "Booty Bay"
+
+step Stonard
+  zone Swamp of Sorrows
+  tip The orc fortress in the middle of the Swamp of Sorrows (levels 35-45). The road in from Duskwood crosses Deadwind Pass, whose creatures are well above level 50: keep to it.
+  getfp "Stonard"
+
+step Rog'mar
+  zone Riverglades
+  tip The Horde camp in the middle of the Riverglades, WoW Forever's own zone north of the Swamp of Sorrows (levels 36-44). The step ticks itself when Grakna's flight map opens (with a Polestar older than 0.4, tick it off yourself).
+  getfp "Rog'mar" npc 255993
+
+step Kargath
+  zone Badlands
+  tip The Horde outpost on the western edge of the Badlands (levels 35-45). From the Riverglades a way climbs north into the south of the Badlands.
+  getfp "Kargath"
+
+step Thorium Point
+  zone Searing Gorge
+  tip The Thorium Brotherhood's camp on the north-west rim of the Searing Gorge (levels 43-50). The trail into the Gorge starts in the Badlands, a short way from Kargath.
+  getfp "Thorium Point"
+
+step Flame Crest
+  zone Burning Steppes
+  tip The Horde camp in the north of the Burning Steppes (levels 50-58). From the Searing Gorge the way through Blackrock Mountain comes out in the Steppes.
+  getfp "Flame Crest"
+
+step Revantusk Village
+  zone The Hinterlands
+  tip The Revantusk trolls' village on the east coast of the Hinterlands (levels 40-50). The road in from Hillsbrad Foothills crosses the whole zone.
+  getfp "Revantusk Village"
+
+step Light's Hope Chapel
+  zone Eastern Plaguelands
+  tip The Argent Dawn's chapel at the east end of the Eastern Plaguelands (levels 53-60), the last Horde flight path in the Eastern Kingdoms: for the other continent, open Flight Paths: Kalimdor (Horde).
+  getfp "Light's Hope Chapel"
